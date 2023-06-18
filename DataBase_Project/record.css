@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-repeat: repeat;
+  background-size: cover;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Rubik', sans-serif;
+  height: 100%;
+  background-color: #fdf2e9;
+}
+
+/**************************/
+/* HEADER */
+/**************************/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fdf2e9;
+
+  /* Because we want header to be sticky later */
+  height: 9.6rem;
+  padding: 0 4.8rem;
+  position: relative;
+}
+
+.logo {
+  padding-top: 1rem;
+  padding-left: 3rem;
+  height: 18.8rem;
+  width: 20rem;
+}
+
+/**************************/
+/* NAVIGATION */
+/**************************/
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 4.8rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #cf711f;
+}
+
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+  color: #fff;
+  background-color: #e67e22;
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+  background-color: #cf711f;
+}
+
+/* MOBILE */
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: #fdf2e9;
+  padding: 40px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.button-container a {
+  background-color: #e67e22;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.button-container a:hover {
+  background-color: #cf711f;
+}
+
+.product_table table {
+  width: 100%;
+  text-align: center;
+}
+
+.product_table table thead th {
+  padding: 1rem;
+  font-size: 1rem;
+  background-color: #e67e22;
+  color: black;
+}
+
+.product_table table td {
+  padding: 1rem;
+  font-size: 2rem;
+  color: black;
+}
+
+.product_table table td:first-child {
+  padding: 0;
+}
+
+.product_table table tr:nth-child(even) {
+  background-color: rgb(245, 233, 211);
+}

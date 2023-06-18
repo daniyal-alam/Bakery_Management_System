@@ -1,0 +1,369 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --blue: #2980b9;
+  --red: tomato;
+  --orange: orange;
+  --black: #333;
+  --white: #fff;
+  --bg-color: #eee;
+  --dark-bg: rgba(0, 0, 0, .7);
+  --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+  --border: .1rem solid #999;
+}
+
+body {
+  background-color: #fdf2e9;
+  max-width: 100%;
+  user-select: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fdf2e9;
+
+  /* Because we want header to be sticky later */
+  height: 9.6rem;
+  padding: 0 4.8rem;
+  position: relative;
+}
+
+.logo {
+  padding-top: 1rem;
+  padding-left: 3rem;
+  height: 18.8rem;
+  width: 20rem;
+}
+
+/**************************/
+/* NAVIGATION */
+/**************************/
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 4.8rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #cf711f;
+}
+
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+  color: #fff;
+  background-color: #e67e22;
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+  background-color: #cf711f;
+}
+
+/* MOBILE */
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
+.heading-featured-in {
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 2.4rem;
+  color: #888;
+}
+
+#info-left {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+#ship-add {
+  display: flex;
+  margin-left: 50px;
+  letter-spacing: 1.5px;
+  max-width: 82%;
+  background-color: black;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 8px 25px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.user-box label {
+  position: relative;
+  color: black;
+  margin-left: 50px;
+  padding: 10px 0;
+  pointer-events: none;
+}
+
+.user-box input {
+  position: relative;
+  width: 80%;
+  margin-left: 50px;
+  padding: 10px;
+  color: black;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+  margin-bottom: 25px;
+  font-size: 16px;
+  background: transparent;
+}
+
+.user-box1 label {
+  position: relative;
+  color: black;
+  margin-left: 50px;
+  padding: 10px 0;
+}
+
+.user-box1 input {
+  position: relative;
+  width: 80%;
+  margin-left: 50px;
+  padding: 10px;
+  color: black;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+  margin-bottom: 25px;
+  font-size: 16px;
+  background: transparent;
+}
+
+
+#ship-address {
+  margin-left: 50px;
+}
+
+#text {
+  display: block;
+  margin-left: 50px;
+  margin-top: -20px;
+  color: #000;
+  font-weight: 400;
+  font-style: italic;
+  padding: 2px;
+}
+
+#prod-code {
+  display: block;
+  margin-left: 50px;
+  margin-top: -20px;
+  color: #000;
+  font-weight: 400;
+  font-style: italic;
+  padding: 2px;
+}
+
+.user-input {
+  width: 500px;
+  margin-left: 450px;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid black;
+}
+
+#btn {
+  width: 500px;
+  margin-left: 100px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#btn button {
+  margin-left: 40px;
+  padding: 10px 150px;
+  background-color: #e67e22;
+  color: #fff;
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 2px solid #e67e22;
+}
+
+#btn button:hover {
+  background-color: #cf711f;
+  color: #fff;
+}
+
+.sub-footer {
+  max-width: 100%;
+  background-color: #CACFD2;
+  text-align: center;
+}
+
+#subscribe {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 30px;
+  margin: 30px auto;
+  padding-top: 15px;
+}
+
+#inbox-msg {
+  font-size: 12px;
+  color: grey;
+}
+
+#form {
+  max-width: 50%;
+  border: 2px solid black;
+  margin-top: 50px;
+  margin: 0 auto;
+  padding: 5px 10px;
+  border-radius: 4px;
+  box-shadow: 4px 4px 4px #aaa;
+  margin-bottom: 20px;
+}
+
+.order-message-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1100;
+  background-color: var(--dark-bg);
+  width: 100%;
+}
+
+.order-message-container::-webkit-scrollbar {
+  width: 1rem;
+}
+
+.order-message-container::-webkit-scrollbar-track {
+  background-color: var(--dark-bg);
+}
+
+.order-message-container::-webkit-scrollbar-thumb {
+  background-color: var(--blue);
+}
+
+.order-message-container .message-container {
+  width: 50rem;
+  background-color: var(--white);
+  border-radius: .5rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.order-message-container .message-container h3 {
+  font-size: 2.5rem;
+  color: var(--black);
+}
+
+.order-message-container .message-container .order-detail {
+  background-color: var(--bg-color);
+  border-radius: .5rem;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.order-message-container .message-container .order-detail span {
+  background-color: var(--white);
+  border-radius: .5rem;
+  color: var(--black);
+  font-size: 2rem;
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  margin: 1rem;
+}
+
+.order-message-container .message-container .order-detail span.total {
+  display: block;
+  background: var(--red);
+  color: var(--white);
+}
+
+.order-message-container .message-container .customer-details {
+  margin: 1.5rem 0;
+}
+
+.order-message-container .message-container .customer-details p {
+  padding: 1rem 0;
+  font-size: 2rem;
+  color: var(--black);
+}
+
+.order-message-container .message-container .customer-details p span {
+  color: var(--blue);
+  padding: 0 .5rem;
+  text-transform: none;
+}
+
+.display-order {
+  max-width: 500px;
+  background-color: #CACFD2;
+  border-radius: .5rem;
+  text-align: center;
+  padding: 1.5rem;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  box-shadow: beige;
+  border: 2px solid black;
+}
+
+.display-order span {
+  display: inline-block;
+  border-radius: .5rem;
+  background-color: var(--bg-color);
+  padding: .5rem 1.5rem;
+  font-size: 2rem;
+  color: var(--black);
+  margin: .5rem;
+}
+
+.display-order span.grand-total {
+  width: 100%;
+  background-color: #e67e22;
+  color: var(--white);
+  padding: 1rem;
+  margin-top: 1rem;
+}

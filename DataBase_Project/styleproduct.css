@@ -1,0 +1,256 @@
+html {
+  overflow-x: hidden;
+  background-color: #fdf2e9;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #fdf2e9;
+
+}
+
+section {
+  padding: 1rem;
+}
+
+.heading {
+  text-align: center;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  color: black;
+  margin-bottom: 2.5rem;
+}
+
+.btn,
+.option-btn,
+.delete-btn {
+  position: relative;
+  width: 60%;
+  text-align: center;
+  background-color: #FF9933;
+  color: white;
+  border-radius: .5rem;
+  font-size: 1.7rem;
+  padding: 1.2rem 1.4rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  margin-left: 8rem;
+  display: block;
+  border: none;
+
+}
+
+.btn-cart {
+  display: block;
+  width: 100%;
+  text-align: center;
+  background-color: #FF9933;
+  color: white;
+  font-size: 1.7rem;
+  padding: 1.2rem 3rem;
+  border-radius: .5rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  border: none;
+}
+
+.btn:hover,
+.btn-cart:hover,
+.option-btn:hover,
+.delete-btn:hover {
+  background-color: #cf711f;
+}
+
+.option-btn i,
+.delete-btn i {
+  padding-right: 2rem;
+
+}
+
+.option-btn {
+  background-color: #FF9933;
+  margin-left: 2rem;
+}
+
+.delete-btn {
+  margin-top: 0;
+  margin-left: 2rem;
+  text-align: center;
+  background-color: #f44336;
+}
+
+.add_product_form {
+  max-width: 41rem;
+  background-color: gainsboro;
+  border-radius: .5rem;
+  padding: 1rem;
+  margin: 0 auto;
+  margin-top: .5rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.add_product_form h3 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+  color: black;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.add_product_form .ibox {
+  border: none;
+  text-transform: none;
+  padding: 1.1rem 1.4rem;
+  font-size: 1.5rem;
+  color: black;
+  border-radius: .5rem;
+  background-color: #fff;
+  margin: 1rem 0;
+  width: 91%;
+}
+
+.add_product_form .ibox1 {
+  text-transform: none;
+  padding: 1.2rem 1.4rem;
+  font-size: 1.5rem;
+  color: black;
+  border-radius: .5rem;
+  background-color: #fff;
+  margin: 1rem 0;
+  width: 29%;
+}
+
+.add_product_form .ibox2 {
+  text-transform: none;
+  padding: 1.2rem 1.4rem;
+  font-size: 1.5rem;
+  color: black;
+  border-radius: .5rem;
+  background-color: #fff;
+  margin: 1rem 0;
+  width: 29%;
+}
+
+
+.add_product_form .labelbox {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  color: black;
+  text-align: justify;
+}
+
+.product_table table {
+  width: 100%;
+  text-align: center;
+}
+
+.product_table table thead th {
+  padding: 1rem;
+  font-size: 2rem;
+  background-color: #1B1212;
+  color: white;
+}
+
+.product_table table td {
+  padding: 1rem;
+  font-size: 2rem;
+  color: black;
+}
+
+.product_table tbale td:first-child {
+  padding: 0;
+}
+
+.product_table table tr:nth-child(even) {
+  background-color: whitesmoke;
+}
+
+.product_table .empty {
+  margin-bottom: 2rem;
+  text-align: center;
+  background-color: gainsboro;
+  color: black;
+  font-size: 2rem;
+  padding: 1.5rem;
+}
+
+.products .contbox {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 25rem);
+  justify-content: center;
+  gap: 3rem;
+}
+
+.products .contbox .box {
+  text-align: center;
+  padding: 1.5rem;
+  border: 2px solid #cf711f;
+  border-radius: 1.5rem;
+
+}
+
+.products .contbox .box img {
+  height: 15rem;
+  border-radius: 2px;
+}
+
+.products .contbox .box h3 {
+  margin: 1rem 0;
+  font-size: 2rem;
+  color: black;
+}
+
+.products .contbox .box .price {
+  font-size: 2rem;
+  color: black;
+}
+
+#cart {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.cart span {
+  padding: .1rem .5rem;
+  border-radius: .5rem;
+  background-color: var(--white);
+  color: var(--blue);
+  font-size: 2rem;
+}
+
+
+
+
+
+@media(max-width:991px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media(max-width:768px) {
+  .product_table {
+    overflow-x: scroll;
+
+  }
+
+  .product_table table {
+    width: 70rem;
+  }
+
+}
+
+
+@media(max-width:450px) {
+  html {
+    font-size: 50%;
+  }
+
+  .heading {
+    font-size: 3rem;
+  }
+}
